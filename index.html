@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thom's Code Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="highscores.html">
+        <h2>View high scores</h2>
+        </a>
+        <div class=timer>
+            <div class="time-text"> 
+                Time Left:
+            </div>
+            <div id="time-sec"> 
+                0
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section>
+        <div id="start-quiz">
+            <h1 id="questions">Coding Quiz Challenge</h1>
+            <p id="paragraph-pg1">
+                <ul>Try to answer the following code related questions within the time limit.</ul>
+                <ul>Keep in mind that incorrect answers will penalize your score/time</ul> 
+                <ul>Have fun and good luck</ul>
+            </p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+    </section>
+
+        <div id="options" class="options-div, hide">
+            <!-- <button id="option1" class="option-buttons">Option 1</button>
+            <button id="option2" class="option-buttons">Option 2</button>
+            <button id="option3" class="option-buttons">Option 3</button>
+            <button id="option4" class="option-buttons">Option 4</button> -->
+        </div>
+
+        <div class="correct-wrong-box">
+            <div id="correct" class= "correct hide">
+                Correct
+            </div>
+            <div id="wrong" class="wrong hide">
+                Wrong
+            </div>
+        </div>
+
+
+        <div id="high-score-box" class="hide"> 
+            <form>
+                <div class="input-field">
+                    <input id="input" class="input-txt-field" type="text" value="Enter Initials" onfocus=this.value=''>
+                </div>
+
+            </form>
+            <button id="submit-btn" class="submit-btn">
+                Submit
+            </button>
+        </div>
+
+</main>
+<script src="assets/js/questions.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
